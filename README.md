@@ -2,21 +2,6 @@
 
 Pipeline em **SQL Server** para criação de estrutura de tabelas e carga automatizada de dados exportados do **SISREG** (Sistema de Regulação), simulando um processo **ETL** voltado à análise assistencial no **Power BI**.
 
----
-
-## ⚙️ Estrutura do Projeto
-📂 sisreg-data-pipeline/
-┣ 📁 sql/
-┃ ┣ 01_create_database_and_table.sql
-┃ ┗ 02_bulk_insert_sisreg.sql
-┣ 📁 data/
-┃ ┗ DADOS - teste.csv (arquivo exemplo sem dados sensíveis)
-┣ 📄 .gitignore
-┣ 📄 README.md
-
-
----
-
 ## 🧩 Descrição dos Scripts
 
 | Arquivo | Função |
