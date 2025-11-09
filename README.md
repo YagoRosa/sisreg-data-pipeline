@@ -28,9 +28,35 @@ Demonstrar um processo de ingestão e tratamento inicial de dados **assistenciai
 
 ## 📊 Próximos Passos
 
-- Criar uma *view* para consolidação de indicadores assistenciais.  
-- Conectar o banco ao Power BI e criar um dashboard analítico.  
-- Automatizar o carregamento via **SQL Agent Job** ou **Python Script**.
+1. **Criar uma view de indicadores assistenciais**
+   - Consolidar informações como quantidade de solicitações, especialidades e situação dos agendamentos.
+   - Padronizar datas e códigos de procedimento para análise.
+
+2. **Conectar o banco ao Power BI**
+   - Usar a conexão nativa com SQL Server:
+     ```
+     Servidor: localhost
+     Banco de Dados: SisregDB
+     Autenticação: Windows ou SQL Login
+     ```
+   - Importar a tabela `Solicitacoes` e criar medidas DAX para:
+     - Total de solicitações
+     - Taxa de autorização
+     - Tempo médio entre solicitação e agendamento
+     - Distribuição por tipo e sexo
+
+3. **Automatizar o pipeline**
+   - Agendar a execução do `02_bulk_insert_sisreg.sql` via **SQL Server Agent** ou **Python (pyodbc)**.
+   - Integrar com Power BI para atualização automática dos relatórios.
+
+---
+
+## 🧭 Roadmap de Evolução
+
+- [ ] Adicionar script de criação da view `vw_Indicadores_Sisreg`
+- [ ] Subir dashboard Power BI conectado ao banco
+- [ ] Documentar fluxo completo no README
+- [ ] Publicar visualização no Power BI Service
 
 ---
 
