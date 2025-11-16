@@ -8,6 +8,7 @@ Pipeline em **SQL Server** para criação de estrutura de tabelas e carga automa
 |----------|--------|
 | **01_create_database_and_table.sql** | Cria o banco de dados `SisregDB` e a tabela `Solicitacoes` com base na estrutura do arquivo CSV exportado do SISREG. |
 | **02_bulk_insert_sisreg.sql** | Executa o carregamento (BULK INSERT) dos dados do arquivo CSV para dentro da tabela no SQL Server. |
+| **03_bulk_insert_sisreg.py** | Executa o carregamento (BULK INSERT) porem em Python. |
 
 ---
 
