@@ -1,8 +1,8 @@
 import pyodbc
 
 # Configuração da conexão
-server = "localhost"  # Ou o servidor que você identificou
-database = "MeuBancoTeste"  # Substitua pelo seu DB
+server = "localhost" 
+database = "MeuBancoTeste" 
 conn_str = (
     f"DRIVER={{ODBC Driver 17 for SQL Server}};"
     f"SERVER={server};"
@@ -39,3 +39,4 @@ except pyodbc.Error as e:
 finally:
     cursor.close()
     conn.close()
+
