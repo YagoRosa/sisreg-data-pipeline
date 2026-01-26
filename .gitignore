@@ -10,15 +10,14 @@ venv/
 env/
 
 ###############################
-# Dados e arquivos locais
+# Dados
 ###############################
-data/
-*.csv
-*.xlsx
-*.xls
-*.json
-*.xml
-*.txt
+data/**/*.csv
+data/**/*.xlsx
+data/**/*.xls
+data/**/*.json
+data/**/*.xml
+data/**/*.txt
 
 ###############################
 # Logs e temporários
