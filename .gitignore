@@ -22,9 +22,7 @@ data/**/*.txt
 ###############################
 # Logs e temporários
 ###############################
-logs/**/*.csv
-logs/**/*.txt
-logs/**/*.log
+*.log
 *.tmp
 temp/
 tmp/
